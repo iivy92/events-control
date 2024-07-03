@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const { participamtsSchema } = require("./participants")
+const { usersSchema } = require("./Users")
 
 const { Schema } = mongoose
 
@@ -19,8 +19,8 @@ const eventsSchema = new Schema ({
     picture_url: {
         type: String,
     },
-    participants: {
-        type: [participamtsSchema]
+    Users: {
+        type: [usersSchema]
     },
     }, 
     { timestamps: true }

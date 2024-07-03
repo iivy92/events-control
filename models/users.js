@@ -2,14 +2,21 @@ const mongoose = require("mongoose")
 
 const { Schema } = mongoose
 
-const participamtsSchema = new Schema ({
+const usersSchema = new Schema ({
+    cpf: {
+        type: String,
+        required: true
+    },
     name: {
         type: String,
         required: true
     },
-    description: {
+    email: {
         type: String,
         required: true
+    },
+    bio: {
+        type: String,
     },
     picture_url: {
         type: String,
@@ -18,9 +25,9 @@ const participamtsSchema = new Schema ({
     { timestamps: true }
 )
 
-const Participants = mongoose.model("Participants", participamtsSchema)
+const Users = mongoose.model("Users", usersSchema)
 
 module.exports = {
-    Participants,
-    participamtsSchema
+    Users,
+    usersSchema
 }
