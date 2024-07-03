@@ -1,0 +1,32 @@
+POST http://localhost:8000/api/events
+Content-Type: application/json
+
+{
+    "name": "test name 02",
+    "description": "eventos para testar edicao 02",
+    "price": 360.00,
+    "picture_url": "https://www.google.com/imgres?q=eventos&imgurl=https%3A%2F%2Fdoity.com.br%2Fblog%2Fapp%2Fuploads%2F2023%2F03%2FTopo-DoityCapa-1.png&imgrefurl=https%3A%2F%2Fdoity.com.br%2Fblog%2Fprogramacao-de-eventos%2F&docid=bgKMGkmx2JpyMM&tbnid=cqkNIGToK2sxCM&vet=12ahUKEwjO873Hy4iHAxVmrpUCHaMTAdkQM3oECBoQAA..i&w=930&h=534&hcb=2&ved=2ahUKEwjO873Hy4iHAxVmrpUCHaMTAdkQM3oECBoQAA"
+}
+
+###
+
+GET http://localhost:8000/api/events
+
+###
+
+GET http://localhost:8000/api/events/6684120775b61c894c36631f
+
+###
+
+DELETE http://localhost:8000/api/events/6684120775b61c894c36631f
+
+###
+PATCH http://localhost:8000/api/events/66841798bd1adb3d60b6de81
+Content-Type: application/json
+
+{
+    "name": "test nameeee 02",
+    "description": "eventos para testar edicadfsdgo 02",
+    "price": 360.00,
+    "picture_url": "https://www.google.com/imgres?q=eventos&imgurl=https%3A%2F%2Fdoity.com.br%2Fblog%2Fapp%2Fuploads%2F2023%2F03%2FTopo-DoityCapa-1.png&imgrefurl=https%3A%2F%2Fdoity.com.br%2Fblog%2Fprogramacao-de-eventos%2F&docid=bgKMGkmx2JpyMM&tbnid=cqkNIGToK2sxCM&vet=12ahUKEwjO873Hy4iHAxVmrpUCHaMTAdkQM3oECBoQAA..i&w=930&h=534&hcb=2&ved=2ahUKEwjO873Hy4iHAxVmrpUCHaMTAdkQM3oECBoQAA"
+}
