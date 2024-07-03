@@ -26,6 +26,10 @@ const eventsSchema = new Schema ({
     { timestamps: true }
 )
 
+if (mongoose.modelNames().includes('Events')) {
+    mongoose.deleteModel('Events')
+}
+
 const Events = mongoose.model("Events", eventsSchema)
 
 module.exports = {

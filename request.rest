@@ -30,3 +30,20 @@ Content-Type: application/json
     "price": 360.00,
     "picture_url": "https://www.google.com/imgres?q=eventos&imgurl=https%3A%2F%2Fdoity.com.br%2Fblog%2Fapp%2Fuploads%2F2023%2F03%2FTopo-DoityCapa-1.png&imgrefurl=https%3A%2F%2Fdoity.com.br%2Fblog%2Fprogramacao-de-eventos%2F&docid=bgKMGkmx2JpyMM&tbnid=cqkNIGToK2sxCM&vet=12ahUKEwjO873Hy4iHAxVmrpUCHaMTAdkQM3oECBoQAA..i&w=930&h=534&hcb=2&ved=2ahUKEwjO873Hy4iHAxVmrpUCHaMTAdkQM3oECBoQAA"
 }
+
+###
+
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "cpf": "05984408520",
+    "name": "Pedro teste 0202",
+    "email": "pedro.ivo_@hotmail.com"
+}
+
+###
+
+GET http://localhost:8000/api/users
+
+###

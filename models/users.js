@@ -5,7 +5,8 @@ const { Schema } = mongoose
 const usersSchema = new Schema ({
     cpf: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     name: {
         type: String,
@@ -24,6 +25,11 @@ const usersSchema = new Schema ({
     },
     { timestamps: true }
 )
+
+
+if (mongoose.modelNames().includes('Users')) {
+    mongoose.deleteModel('Users')
+}
 
 const Users = mongoose.model("Users", usersSchema)
 
